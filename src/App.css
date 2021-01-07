@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.home{
+  background-image: url('utils/network1.png');
+  height:calc(100vh - 70px);
+  text-align: center;
+}
+
+.steps-div{
+  width: 80%;
+  margin: auto;
+}
+
+.form1-alignment{
+  width: 50%;
+  margin: auto;
+}
+
+.form1-content{
+  padding: 5%;
+}
+
+.form-footer{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(calc(100vh - 85vh));
+}
+
+.custom-file-upload{
+  border: 1px solid #ccc;
+  display: block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.custom-file-upload-after{
+  border: 1px solid #ccc;
+  display: block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background: #23272B;
+  color:white;
+}
+
+.custom-file-upload-diabled{
+  border: 1px solid #ccc;
+  display: block;
+  background-color: lightgray;
+  padding: 6px 12px;
+}
+
+input[type='file']{
+  display: none;
+}
+
+.about{
+  height:100%;
+  background-image: none;
+}
+
+.reference{
+  padding: 2%;
+}
+
+.icon{
+  height:100%;
+  width:100%
+}
+
+
+@media only screen and (max-width: 600px) {
+  .form-footer{
+    width: 100%;
+    transform: translateY(calc(100vh - 80vh));
+  }
+}

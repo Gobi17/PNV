@@ -1,0 +1,115 @@
+
+.image-container {
+   width: 25%;
+   margin: auto;
+   padding: 2%;
+}
+
+.name-card{
+   font-size: medium;
+   font-style: italic;
+   padding: 0;
+}
+
+.contact-main-container{
+   display: flex;
+   justify-content: space-evenly;
+   padding: 2%;
+}
+.image-wrapper {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    box-shadow: 6px 0px 64px -12px rgba(0,0,0,0.59);
+    overflow: hidden;
+}
+.image-wrapper:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 180%;
+   height: 100%;
+   width: 100%;
+   background: rgba(255,255,255,.3);
+   z-index: 1;
+   transform: skew(45deg);
+   transition: .5s;
+}
+.image-wrapper:hover::before {
+    left: -180%;
+}
+.image-wrapper img {
+   height: 100%;
+   width: 100%;
+   filter: grayscale(100%);
+   transition: 0.5s;
+}
+.image-wrapper:hover img
+{
+   filter: grayscale(0%);
+   transform: scale(1.1);
+}
+.image-wrapper h3 {
+    background: black;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: right;
+    transition: 0.5s;
+}
+.image-wrapper:hover h3 {
+    transform: perspective(400px) rotateY(0deg);
+}
+
+.image-wrapper ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(255,255,255,0);
+}
+.image-wrapper ul li {
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform-origin: left;
+    transition: .4s;
+    transform: perspective(800px) rotateY(90deg);
+}
+.image-wrapper:hover ul li {
+   transform: perspective(800px) rotateY(0deg);
+}
+/* .image-wrapper:hover ul li:nth-child(1) {
+    transition-delay: .4s;
+}
+.image-wrapper:hover ul li:nth-child(1) {
+   transition-delay: .6s;
+}
+.image-wrapper:hover ul li:nth-child(1) {
+   transition-delay: .8s;
+}
+.image-wrapper:hover ul li:nth-child(1) {
+   transition-delay: .2s;
+} */
+.image-wrapper ul li {
+   color: #111;
+}
+.image-wrapper ul li:hover {
+   color: white;
+   cursor: pointer;
+   background-color: black;
+}
+.image-wrapper ul li:hover {
+   transform: scale(1.4);
+   cursor: pointer;
+}
