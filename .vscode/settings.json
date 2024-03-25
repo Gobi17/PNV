@@ -1,0 +1,8 @@
+{
+    "prettier.useTabs": true,
+    "prettier.singleQuote": true,
+    "prettier.resolveGlobalModules": true,
+    "prettier.requirePragma": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true
+}
